@@ -1,0 +1,80 @@
+body {
+	background-image: url(../images/bg.jpg); /*.. means go up a folder (from this file which is style.css) to find the 
+	image folder called bg.jpg.)*/
+	background-repeat: no-repeat;/*naturally images repeat across the page so 
+	always need to put no-repeat*/
+	background-size: cover; 
+	background-attachment: fixed:
+	font-family: Helvetica, Arial, sans-serif;
+}/*a list of priorities - if your browser user has helvetica, use helvetica
+if not, then use Arial, if not that, sans-serif.*/
+h1 {text-align: center;
+font-size: 50px;
+font-family: 'Slabo 27px', serif;/*from google fonts*/
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: normal;
+	}
+img {
+	border: 5px solid /* dotted or dashed*/black;
+	border-radius: 50%;
+	margin: 0 auto; /* (always use margin 0 auto to ensure that it 
+	is centered horizontally to ensure it is centred on whatever
+	screen size it loads in)  We can use layers to give clever visual designs
+	padding-border-margin (closest in to further away) see "the box model".
+	see "CSS BOX PROPERTIES" in course notes for shorthand.*/
+	display: block;
+	background-color: white;
+	transition:transform 0.5s;
+}
+img:hover{
+	transform: rotate(360deg) scale(1.2);
+}
+h3{
+	margin-bottom;0;
+}
+h3:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+h3+*{
+	display:none;
+}
+/*this means that when the page first loads, the paragraphs that follow h3 headings
+are hidden (then the javascript will toggle it on clicking)*/
+
+p,/*need commas as "ands"*/
+ol,
+ul {
+	line-height: 1.6/*charachter height*/;
+	list-style: none;
+	padding-left: 0
+}
+a{
+	text-decoration: none;
+	font font-weight: bold;
+	color: rgb(192,38,192);
+}
+a:hover { /*how the element changes when you hover over the link*/
+	text-decoration: underline;
+	color: rgb(96,16,19);
+}
+/* the DIV element is what we use for dividing the page up, used for
+coloumns headers and footers etc, dividing the page up. We are going to use one to 
+take all the conent that we have created and put in the middle.  can use HTML for this so go back
+to HTML file and find the body element and see <div> element and use of class element*/
+.main {
+	background-color: rgba(255, 255, 255, 0.75); /*the 0.75 is the "a" element of the RGBa and 
+	is the transparency bit*/
+	max-width: 600px; /*use "max" witdh to ensure that it goes small for mobile users*/
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 40px /*this is the curvature of the corners - can use % of images too. 
+	if you have a rectangular image
+	and you say border-radius 50% then the border would be an oval.  If you said
+	border radius 100px it would be like a pill shape more straight edged. you can also 
+	do different radius for different corners*/
+}

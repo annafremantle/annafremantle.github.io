@@ -1,0 +1,45 @@
+<!doctype html> <!--telling the computer which HTML we are typing in which is HTML5-->
+<html>
+	<head> <!--head and body are the only possible children of HTML-->
+	<!--info about the page - it is also what appears in google search title element results for this page. Everything must be concise and accurate. Web browers, Search engines and screen readers are what are going to read HTML code -->
+	<title> Anna Fremantle</title>
+	<meta charset="utf-8"> <!-- Document describing itself - I am in characterset utf-8 which is a characterset that includes the typeface of lots and lots of languages.  It means that accented characters etc will be recognised by the browser it will even recognise emojis which will be properly annonced by screen readers use control+command+space to get an emoji on a mac-->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- relationship href tells program which stylesheet to go to  - here we are telling it to go into the css folder and find the file inside called style.css"-->
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"><!--from google fonts-->
+	</head>
+	<body><!--contains all the content of the page-->
+		<div class="main"> <!-- div element is closed at the bottom, and referred to in the CSS for styling-->
+		<!-- conent of the page -->
+		<h1>Anna Fremantle</h1>
+		<!-- accurately representing what is important or not important in the structure of the document itself by use of headings -->
+		<h2>Content and presentation design</h2>
+		<img src="images/me.jpg" alt="Anna Fremantle" width=200>
+		<!-- this is asking it to source the image file called "me.jpg" in the images folder" by giving the directions from the file we are in to that file.  Look for something called "images" and then the file called "me.jpg".  It is a "path. and The "alt" is the alternate text description - which must be included (ok not to if there is a caption underneath it -would still be alt="")-->
+		<h3>About me</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h3>Top Three Favorite Savoury Fruits</h3>
+		<ol>
+			<li>Avocado</li>
+			<li>Tomato</li>
+			<li>Pumpkin</li>
+			<li>Squash</li>
+		</ol>
+		<!-- This ordered list comes up in a numbered list, you can change this all in CSS.  This is the default system in HTML. The web is full of lists. If it's not a paragraph or a heading it is probably a list-->
+		<h3>me on the Web</h3>
+		<ul>
+			<li>
+				<a href="http:/https://www.facebook.com/">Facebook></a>
+				<!-- the <a> element is for anchor - we use it for links-->
+			</li>
+		</ul>
+		</div> <!-- highlight all code in the div and press tab to move the paragraph across. -->
+		<script src="https://code.jquery.com/jquery.js"></script> 
+		<script src="js/main.js"></script> 
+	</body>
+</html>
